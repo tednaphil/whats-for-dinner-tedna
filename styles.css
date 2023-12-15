@@ -8,3 +8,10 @@ red - #ee5253
 
 */
 
+section {
+    background-color: rgba(225, 225, 225, .9);
+    /* border: solid black .5px; */
+    display: inline-block;
+    height: 35%;
+    width: 40%;
+}

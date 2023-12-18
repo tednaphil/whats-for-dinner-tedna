@@ -8,10 +8,92 @@ red - #ee5253
 
 */
 
+body {
+    background-image: url(assets/burger-friends.jpg);
+    background-size: cover;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    margin-bottom: 5%;
+    background-color: #0fb9b1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+    width: 100%;
+    
+}
+
+/* nav {
+    background-color: #0fb9b1;
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+    width: 100%;
+    /* margin-top: 0%;
+    margin-bottom: 5%;
+    overflow: hidden;
+ } */
+
+nav h2{
+    margin: 10px
+}
+
+nav button{
+    background-color: rgba(225, 225, 225, .9);
+    border: none;
+    padding: 5px;
+    margin: 10px
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 section {
     background-color: rgba(225, 225, 225, .9);
     /* border: solid black .5px; */
-    display: inline-block;
+    display: flex;
+    margin: 0;
     height: 35%;
     width: 40%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    padding: 20%
+}
+
+form legend {
+    margin-bottom: 8px;
+    font-size: large;
+}
+
+form label {
+    margin: 8px;
+    font-size: small;
+}
+
+form button {
+    background-color: #0fb9b1;
+    border-radius: 10%;
+    border: none;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+#pot-image {
+    height: 25%;
+    width: 25%; 
+    padding: 30%;
+
 }

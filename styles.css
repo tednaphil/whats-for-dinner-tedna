@@ -69,18 +69,17 @@ section {
 form {
     display: flex;
     flex-direction: column;
-    align-items: space-evenly;
-    padding: 20%
+    padding: 15%
 }
 
 form legend {
     margin-bottom: 8px;
-    font-size: large;
+    font-size: x-large;
 }
 
 form label {
     margin: 8px;
-    font-size: small;
+    font-size: medium;
 }
 
 form button {
@@ -89,16 +88,27 @@ form button {
     border: none;
     margin-top: 30px;
     padding: 5px;
+    width: 50%
 }
 
 #pot-image {
-    height: 25%;
-    width: 25%; 
+    height: 35%;
+    width: 35%; 
     padding: 25%;
 }
 
-main :nth-child(2) {
+#form-display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 400;
+    width: 420;
+}
+
+#recipe-display {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 400;
+    width: 420;
 }

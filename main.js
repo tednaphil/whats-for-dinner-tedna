@@ -52,3 +52,16 @@ var clearButton = document.querySelector('#clear-button');
 var cookpot = docuemnt.querySelector('#pot-image');
 var dishDisplay = document.querySelector('#dish-rec');
 var formCatSelected = document.querySelector('input[name="radio"]:checked').value;
+
+function getRandomFood(foodArray) {
+    var randomFood = foodArray[Math.floor(Math.random()*foodArray.length)]
+    return randomFood
+  };
+
+function displayFood() {
+    // add .hidden class to cookpot image
+    // remove .hidden class from dish-rec article
+    // add flex display (.visible) class to dish-rec article
+    // use innerText to add getRandomFood(formCatSelected) to #dish
+    //
+}

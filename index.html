@@ -4,7 +4,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <nav>
+        <h2> What's for Dinner?</h2>
+        <button class="buttons" id="add-recipe-button">ADD A RECIPE</button>
+    </nav>
+    <main>
+      <section id="form-display">
+        <form>
+          <legend> What are you looking for?</legend>
+          <label><input type="radio" name="radio" value="side" required/> Side</label>
+          <label><input type="radio" name="radio" value="main dish" required/> Main Dish</label>
+          <label><input type="radio" name="radio" value="dessert" required/> Dessert</label>
+          <label><input type="radio" name="radio" value="entire meal" required/> Entire Meal</label>
+          <button class="buttons" id="lets-cook-button">LET'S COOK!</button>
+        </form>
+      </section>
+      <section id="recipe-display"> 
+        <img id="pot-image" src="assets/cookpot.svg" alt="Cookpot"/>
+        <article class="hidden" id="dish-rec">
+          <h3>You should make:</h3>
+          <p id="dish" class=> test text</p>
+        </article>
+        <div id="btn-holder" class="hidden">
+          <button id="clear-button">CLEAR</button>
+        </div>
+      </section>
+    </main>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>

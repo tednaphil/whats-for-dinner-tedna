@@ -1,10 +1,139 @@
-/* font-family: 'Roboto', sans-serif;
+body {
+    background-image: url(assets/burger-friends.jpg);
+    background-size: cover;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Roboto', sans-serif;
+}
 
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
+nav {
+    margin-bottom: 5%;
+    background-color: #0fb9b1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+    width: 100%;
+    
+}
 
-*/
+nav h2 {
+    margin: 10px
+}
 
+nav button{
+    background-color: rgba(225, 225, 225, .9);
+    border: none;
+    padding: 5px;
+    margin: 10px
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section {
+    background-color: rgba(225, 225, 225, .9);
+    /* border: solid black .5px; */
+    display: flex;
+    margin: 0;
+    height: 35%;
+    width: 40%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 15%
+}
+
+form legend {
+    margin-bottom: 8px;
+    font-size: x-large;
+}
+
+form legend:after {
+    content: "*";
+    color: #ee5253;
+}
+
+form label {
+    margin: 10px;
+    font-size: medium;
+}
+
+form button {
+    background-color: #0fb9b1;
+    border-radius: 10%;
+    border: none;
+    margin-top: 20px;
+    padding: 5px;
+    width: 50%
+}
+
+#pot-image {
+    height: 35%;
+    width: 35%; 
+    padding: 25%;
+}
+
+#form-display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 400;
+    width: 420;
+}
+
+#recipe-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400;
+    width: 420;
+}
+
+h3 {
+    font-style: italic;
+    font-weight:200;
+    margin: 0;
+}
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+#dish {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#dish-rec {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#btn-holder {
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 60%;
+    right:15%
+}
+
+#clear-button {
+    background-color:#95a5a6;
+    padding: 5px;
+    border-radius: 10%;
+    border: none;
+    color: rgba(225, 225, 225, .9)
+}

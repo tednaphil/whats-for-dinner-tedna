@@ -9,17 +9,17 @@
         <button class="buttons" id="add-recipe-button">ADD A RECIPE</button>
     </nav>
     <main>
-      <section>
+      <section id="form-display">
         <form>
           <legend> What are you looking for?</legend>
-          <label><input type="radio" name="radio" value="side"/> Side</label>
-          <label><input type="radio" name="radio" value="main dish"/> Main Dish</label>
-          <label><input type="radio" name="radio" value="dessert"/> Dessert</label>
-          <label><input type="radio" name="radio" value="entire meal"/> Entire Meal</label>
+          <label><input type="radio" name="radio" value="side" required/> Side</label>
+          <label><input type="radio" name="radio" value="main dish" required/> Main Dish</label>
+          <label><input type="radio" name="radio" value="dessert" required/> Dessert</label>
+          <label><input type="radio" name="radio" value="entire meal" required/> Entire Meal</label>
           <button class="buttons" id="lets-cook-button">LET'S COOK!</button>
         </form>
       </section>
-      <section> 
+      <section id="recipe-display"> 
         <img id="pot-image" src="assets/cookpot.svg" alt="Pot of food"/>
       </section>
     </main>

@@ -77,6 +77,11 @@ form legend {
     font-size: x-large;
 }
 
+form legend:after {
+    content: "*";
+    color: #ee5253;
+}
+
 form label {
     margin: 8px;
     font-size: medium;

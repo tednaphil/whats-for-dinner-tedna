@@ -83,6 +83,12 @@ function displayFood() {
             var randomDish = getRandomFood(sides)
             dish.innerText = `${randomDish}`
         }
+        if (category === 'entire meal') {
+            var randomSide = getRandomFood(sides);
+            var randomMain = getRandomFood(mains);
+            var randomDessert = getRandomFood(desserts);
+            dish.innerText = `${randomMain} with a side of ${randomSide} and ${randomDessert} for dessert!`
+        }
     }
 }
 

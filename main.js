@@ -49,9 +49,12 @@ var desserts = [
 
 var letsCookButton = document.querySelector('#lets-cook-button');
 var clearButton = document.querySelector('#clear-button');
-var cookpot = docuemnt.querySelector('#pot-image');
+var cookpot = document.querySelector('#pot-image');
 var dishDisplay = document.querySelector('#dish-rec');
-var formCatSelected = document.querySelector('input[name="radio"]:checked').value;
+var dish = document.querySelector('#dish');
+
+
+
 
 function getRandomFood(foodArray) {
     var randomFood = foodArray[Math.floor(Math.random()*foodArray.length)]
@@ -59,9 +62,34 @@ function getRandomFood(foodArray) {
   };
 
 function displayFood() {
-    // add .hidden class to cookpot image
-    // remove .hidden class from dish-rec article
-    // add flex display (.visible) class to dish-rec article
+    event.preventDefault()
+    cookpot.classList.add('hidden')
+    dishDisplay.classList.remove('hidden')
+    dishDisplay.classList.add('visible')
+    var formCatSelected = document.querySelector('input[name="radio"]:checked').value;
+    if (formCatSelected) {
+        var category = formCatSelected
+        console.log('category', category)
+        console.log(typeof(category))
+        if (category === 'desserts') {
+            var randomDish = getRandomFood(desserts)
+            dish.innerText = `${randomDish}`
+        }
+        if (category === 'mains') {
+            var randomDish = getRandomFood(mains)
+            dish.innerText = `${randomDish}`
+        }
+        if (category === 'sides') {
+            var randomDish = getRandomFood(sides)
+            dish.innerText = `${randomDish}`
+        }
+        // var randomDish = getRandomFood(category)
+        // console.log('randomDish: ', randomDish)
+        // dish.innerText = `${randomDish}`
+    }
     // use innerText to add getRandomFood(formCatSelected) to #dish
     //
 }
+
+
+letsCookButton.addEventListener('click', displayFood)

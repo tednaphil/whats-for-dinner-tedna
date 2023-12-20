@@ -49,6 +49,7 @@ var desserts = [
 
 var letsCookButton = document.querySelector('#lets-cook-button');
 var clearButton = document.querySelector('#clear-button');
+var clearButtonHolder = document.querySelector('#btn-holder')
 var cookpot = document.querySelector('#pot-image');
 var dishDisplay = document.querySelector('#dish-rec');
 var dish = document.querySelector('#dish');
@@ -66,11 +67,10 @@ function displayFood() {
     cookpot.classList.add('hidden')
     dishDisplay.classList.remove('hidden')
     dishDisplay.classList.add('visible')
+    // clearButtonHolder.classList.remove('hidden')
     var formCatSelected = document.querySelector('input[name="radio"]:checked').value;
     if (formCatSelected) {
         var category = formCatSelected
-        console.log('category', category)
-        console.log(typeof(category))
         if (category === 'desserts') {
             var randomDish = getRandomFood(desserts)
             dish.innerText = `${randomDish}`
@@ -83,12 +83,7 @@ function displayFood() {
             var randomDish = getRandomFood(sides)
             dish.innerText = `${randomDish}`
         }
-        // var randomDish = getRandomFood(category)
-        // console.log('randomDish: ', randomDish)
-        // dish.innerText = `${randomDish}`
     }
-    // use innerText to add getRandomFood(formCatSelected) to #dish
-    //
 }
 
 

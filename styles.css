@@ -90,6 +90,8 @@ form button {
 
 #recipe-display {
     display: flex;
+    position: relative;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 400;
@@ -127,8 +129,8 @@ h3 {
     justify-content: flex-end;
     align-items: flex-end;
     position: absolute;
-    bottom: 60%;
-    right:15%
+    bottom: 40px;
+    right: 40px
 }
 
 #clear-button {

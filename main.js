@@ -67,7 +67,7 @@ function displayFood() {
     cookpot.classList.add('hidden')
     dishDisplay.classList.remove('hidden')
     dishDisplay.classList.add('visible')
-    // clearButtonHolder.classList.remove('hidden')
+    clearButtonHolder.classList.remove('hidden')
     var formCatSelected = document.querySelector('input[name="radio"]:checked').value;
     if (formCatSelected) {
         var category = formCatSelected

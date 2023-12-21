@@ -90,7 +90,15 @@ function displayFood() {
             dish.innerText = `${randomMain} with a side of ${randomSide} and ${randomDessert} for dessert!`
         }
     }
-}
+};
+
+function clearDisplay() {
+    clearButtonHolder.classList.add('hidden')
+    dishDisplay.classList.remove('visible')
+    dishDisplay.classList.add('hidden')
+    cookpot.classList.remove('hidden')
+};
 
 
-letsCookButton.addEventListener('click', displayFood)
+letsCookButton.addEventListener('click', displayFood);
+clearButton.addEventListener('click', clearDisplay);

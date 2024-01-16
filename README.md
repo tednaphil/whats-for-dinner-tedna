@@ -22,7 +22,7 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 - `cd` into the project
 - Read this README thoroughly, then begin working!
 
-______________________________________________________  
+<!--______________________________________________________  
 # README Template  
 Before turning this project in, erase this line and everything above it and fill in the info below.  
 ______________________________________________________  

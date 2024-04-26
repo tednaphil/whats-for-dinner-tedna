@@ -19,6 +19,7 @@ This is an app that helps users choose a dish and put together meals.
 
 ### Context:
 - This project was a solo challenge completed in the 3rd week of learning JavaScript, HTML, and CSS in the Turing Front End Engineering program
+- The challenge was timeboxed to 4 hours
 
 ### Learning Goals:
 - Gain experience building an application that utilizes HTML, CSS, and JavaScript
